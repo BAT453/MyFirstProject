@@ -10,10 +10,17 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
-            int n = 4; 
-            int s = 0; 
-            for (int k = 1; k-- >= n ; s += k) 
-                Console.WriteLine(s);
+            //4.6 -> last element 4.5
+            //4.7 -> last element 4.7
+            //5.4 - 9.9 with (9)
+
+            int length = 11;
+
+            for (double i = 4; i < length; i += 0.1)
+            {
+                Console.WriteLine(i);
+            }
+
             Console.ReadKey();
         }
     }
